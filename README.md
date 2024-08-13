@@ -65,4 +65,4 @@ Use the command below to run test on individual file
 pytest tests/<name_of_file>
 Example: pytest tests/test_movie.py
 ```
-
+To run the server, input the command `uvicorn main:app` in your terminal. Add `/docs` to the URL of the running server to access the API documentation provided by Swagger.
