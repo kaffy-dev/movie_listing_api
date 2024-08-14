@@ -10,7 +10,7 @@ pip install fastapi[all]
 All dependencies needed for this project is provided in the __requirements.txt file__. After cloning the repository, run the command below in your terminal to install all dependencies.
 
 ```
-pip freeze > requirements.txt
+pip install requirements.txt
 ```
 ## Cloning the Repository
 To clone this repository, follow the steps below

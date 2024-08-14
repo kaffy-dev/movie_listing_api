@@ -151,12 +151,12 @@ class CommentService():
         logger.info('Querying the comment model')
         comments = db.query(models.Comment).offset(offset).limit(limit).all()
 
-        # ExtractING movie_ids from the comments
+        # Extracting movie_ids from the comments
         movie_ids = []
         for comment in comments:
             movie_ids.append(comment.movie_id)
         
-        # FetchING all movies corresponding to the movie_ids
+        # Fetching all movies corresponding to the movie_ids
         movies = db.query(models.Movie).filter(models.Movie.id.in_(movie_ids)).all()
 
         # Dictionary mapping movie_id to movie_title
